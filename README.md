@@ -58,13 +58,7 @@ import { useForm } from "@mantine/form";
 import { MobileInput } from "mantine-mobile-input";
 
 function App() {
-  const form = useForm({
-    initialValues: { mobile: "" },
-    validate: {
-      mobile: (value) =>
-        value.length < 10 ? "Please enter a valid mobile number" : null,
-    },
-  });
+  const form = useForm({....});
 
   return (
     <form onSubmit={form.onSubmit(console.log)}>
