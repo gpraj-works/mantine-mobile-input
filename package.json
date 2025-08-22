@@ -2,6 +2,7 @@
   "name": "mantine-mobile-input",
   "version": "1.0.0",
   "description": "A mantine mobile/phone input component with country code",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -10,10 +11,6 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "keywords": [],
-  "author": "Pushparaj Gunasekaran",
-  "license": "MIT",
-  "type": "commonjs",
   "devDependencies": {
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
@@ -21,10 +18,24 @@
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "@mantine/core": "^8.2.7",
-    "@mantine/hooks": "^8.2.7",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-international-phone": "^4.6.0"
-  }
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0",
+    "@mantine/core": ">=8.0.0 <9.0.0",
+    "@mantine/hooks": ">=8.0.0 <9.0.0",
+    "react-international-phone": "^4.2.2"
+  },
+  "keywords": [
+    "mantine",
+    "mantine-component",
+    "react",
+    "react-component",
+    "phone-input",
+    "mobile-input",
+    "phone-number",
+    "country-code",
+    "international-phone",
+    "typescript"
+  ],
+  "author": "Pushparaj Gunasekaran",
+  "license": "MIT"
 }

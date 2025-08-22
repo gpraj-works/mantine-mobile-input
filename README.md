@@ -1,11 +1,3 @@
-Nice 👍 Adding a **Mantine Form usage example** will make the README much more valuable.
-Here’s the improved **README.md** with your request included:
-
----
-
-## 📄 `README.md`
-
-````markdown
 # 📱 mantine-mobile-input
 
 A simple, customizable **Mantine** component for mobile/phone input with country code selection.  
@@ -39,7 +31,7 @@ pnpm add mantine-mobile-input
 bun add mantine-mobile-input
 ````
 
-You’ll also need peer dependencies if not already installed:
+Also install peer dependencies (if not already):
 
 ```bash
 npm install react react-dom @mantine/core @mantine/hooks react-international-phone
@@ -55,13 +47,9 @@ npm install react react-dom @mantine/core @mantine/hooks react-international-pho
 import { MobileInput } from "mantine-mobile-input";
 
 function App() {
-  return (
-    <MobileInput placeholder="Enter phone number" />
-  );
+  return <MobileInput placeholder="Enter phone number" />;
 }
 ```
-
----
 
 ### With Mantine Form
 
@@ -70,7 +58,13 @@ import { useForm } from "@mantine/form";
 import { MobileInput } from "mantine-mobile-input";
 
 function App() {
-  const form = useForm({...});
+  const form = useForm({
+    initialValues: { mobile: "" },
+    validate: {
+      mobile: (value) =>
+        value.length < 10 ? "Please enter a valid mobile number" : null,
+    },
+  });
 
   return (
     <form onSubmit={form.onSubmit(console.log)}>
@@ -123,17 +117,10 @@ mantine-mobile-input/
 ## 🤝 Contributing
 
 Pull requests and issues are welcome!
-If you’d like to add features (like validation or custom formatting), feel free to open a PR.
+If you’d like to add features (validation, formatting, etc.), feel free to open a PR.
 
 ---
 
 ## 📜 License
 
-[MIT](./LICENSE) © 2025 Your Name
-
-```
-
----
-
-👉 Do you also want me to add a **section with screenshots/GIF** (showing the dropdown flag selector + input field) so users immediately see what the component looks like, or just keep the usage examples in code?
-```
+MIT © 2025 [gpraj-works](https://github.com/gpraj-works)
