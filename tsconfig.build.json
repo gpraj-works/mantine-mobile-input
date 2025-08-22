@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true, // generate .d.ts files
+    "declarationDir": "dist/types", // types go here
+    "outDir": "dist/cjs", // compiled .js for CommonJS
+    "module": "CommonJS"
+  },
+  "include": ["src/**/*"]
+}

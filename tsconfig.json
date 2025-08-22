@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true, // 👈 fixes default import errors
+    "allowSyntheticDefaultImports": true, // 👈 allows "import React from 'react'"
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"] // 👈 also needed for Map, Set, etc.
+  },
+  "exclude": ["dist", "node_modules"],
+}
