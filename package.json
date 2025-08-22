@@ -1,6 +1,6 @@
 {
   "name": "mantine-mobile-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mantine mobile/phone input component with country code",
   "type": "commonjs",
   "main": "index.js",
