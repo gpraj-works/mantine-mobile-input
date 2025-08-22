@@ -1,1 +1,2 @@
-export { default as MobileInput } from "./MobileInput"
+import MobileInput from "./MobileInput"
+export default MobileInput

@@ -10,11 +10,10 @@ const MobileInput: FC<TextInputProps> = (props) => {
   const { inputValue, handlePhoneValueChange, country, setCountry } = usePhoneInput({
     defaultCountry: 'in',
     countries: defaultCountries,
+    value: props.value as string,
     onChange: ({ phone }) => {
       if (props?.onChange) {
-        const event = { target: { value: phone } }
-        const syntheticEvent = event as unknown as ChangeEvent<HTMLInputElement>
-        props.onChange(syntheticEvent)
+        props.onChange(phone as unknown as ChangeEvent<HTMLInputElement>)
       }
     },
   })
